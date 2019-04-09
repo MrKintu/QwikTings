@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "438088964217",
+    "firebase_url": "https://qwiktings.firebaseio.com",
+    "project_id": "qwiktings",
+    "storage_bucket": "qwiktings.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:438088964217:android:8d428bc9d70b0345",
+        "android_client_info": {
+          "package_name": "com.example.declan.qwiktings"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "438088964217-ss892bv6tcfjk9dnu3db35jprb13sk6p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCArHcIQ-Jti0IBHLVmrQ1hUHvTBpLPDqg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

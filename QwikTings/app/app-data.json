@@ -1,0 +1,89 @@
+{
+  "Category" : {
+    "01" : {
+      "image" : "http://www.abc.net.au/cm/rimage/9997840-16x9-large.jpg",
+      "name" : "CLOTHES & ACCESSORIES"
+    },
+    "02" : {
+      "image" : "https://gaameover.com/wp-content/uploads/2018/03/dims.jpg",
+      "name" : "ELECTRONIC GADGETS"
+    },
+    "03" : {
+      "image" : "https://www.stovekraft.com/upload/pigeon/slider/1455195618568.png",
+      "name" : "HOME APPLIANCES"
+    }
+  },
+  "Items" : [ null, {
+    "description" : "Brand new suit for Men.",
+    "image" : "https://cdn.pixabay.com/photo/2017/08/28/02/58/suit-2688315_960_720.jpg",
+    "menuID" : "1",
+    "name" : "Tom Ford Suit (Black)",
+    "price" : "5500"
+  }, {
+    "description" : "Brand New Watch for Men.",
+    "image" : "https://cdn.pixabay.com/photo/2015/09/09/02/03/clock-931027_960_720.jpg",
+    "menuID" : "1",
+    "name" : "Armani Watch.",
+    "price" : "50000"
+  }, {
+    "description" : "Brand New formal shoes for Men.",
+    "image" : "https://cdn.pixabay.com/photo/2015/09/02/12/35/shoes-918543_960_720.jpg",
+    "menuID" : "1",
+    "name" : "HUGO BOSS Oxford Shoes",
+    "price" : "300"
+  }, {
+    "description" : "Brand New FC Barcelona kit including Home, Away and 3rd Kit.",
+    "image" : "https://3.bp.blogspot.com/-Km49q3OtoyM/Wwajm5henDI/AAAAAAAArmQ/zbNbw_QDf8M4ppXG2tDFDjbNTTx9eJV7ACLcBGAs/s640/PES%2B2017%2BF.C%2BBarcelona%2B2018-2019%2BFull%2BKits.jpg",
+    "menuID" : "1",
+    "name" : "FC Barcelona Kit 2018/2019 Season",
+    "price" : "250"
+  }, {
+    "description" : "Brand new iPhone XR including phone charger and headsets.",
+    "image" : "https://smhttp-ssl-73418.nexcesscdn.net/tech/en/wp-content/uploads/sites/2/2018/09/iPhone-Xr-cover.jpg",
+    "menuID" : "2",
+    "name" : "iPhone XR",
+    "price" : "900"
+  }, {
+    "description" : "Brand new PlayStation 4 Pro.",
+    "image" : "https://xtremetech.tech/wp-content/uploads/2018/03/ps4-pro-cover.jpg",
+    "menuID" : "2",
+    "name" : "PS4 Pro",
+    "price" : "400"
+  }, {
+    "description" : "Brand new Dell laptop with Core-i7, 1TB HDD & 8GB RAM.",
+    "image" : "https://cnet2.cbsistatic.com/img/2FXtTGKFwRajSN0o7xEGTwBdoXo=/830x467/2017/03/03/68f97ee9-f2f9-48ef-af5a-fc3b9a39ba75/dell-inspiron-15-7000-2017-12.jpg",
+    "menuID" : "2",
+    "name" : "Dell Inspiron 15 7000 (Red)",
+    "price" : "500"
+  }, {
+    "description" : "Brand new Apple Watch, Series 4.",
+    "image" : "http://techfuz.com/wp-content/uploads/2018/06/apple-watch-4.jpg",
+    "menuID" : "2",
+    "name" : "Apple Watch",
+    "price" : "400"
+  }, {
+    "description" : "Brand new Smart Fridge.",
+    "image" : "https://www.lifewire.com/thmb/ZnrFuKiGwgUQrBkOTrMNUTiXnEE=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/samsung-ha-ref-rf56k9540sr-family-hub-overview-5aa18f0e18ba010037c023a5.jpg",
+    "menuID" : "3",
+    "name" : "Samsung Smart Fridge",
+    "price" : "3300"
+  }, {
+    "description" : "Brand new Smart TV.",
+    "image" : "https://kenyaprice.com/wp-content/uploads/2017/08/Best-Smart-Tvs-in-Kenya-640x458.jpg",
+    "menuID" : "3",
+    "name" : "Sony Smart TV",
+    "price" : "670"
+  }, {
+    "description" : "Brand new Smart Washing Machine.",
+    "image" : "https://azcd.harveynorman.com.au/media/catalog/product/cache/21/image/992x558/9df78eab33525d08d6e5fb8d27136e95/w/d/wdb030.jpg",
+    "menuID" : "3",
+    "name" : "LG Washing Machine",
+    "price" : "500"
+  }, {
+    "description" : "Brand new Toaster.",
+    "image" : "https://www.kenwoodworld.com/WebImage/Global/Product%20images/Breakfast/K-Sense/TFM400BL-Hero-Image_800x600.jpg",
+    "menuID" : "3",
+    "name" : "Kenwood Toaster",
+    "price" : "500"
+  } ]
+}
