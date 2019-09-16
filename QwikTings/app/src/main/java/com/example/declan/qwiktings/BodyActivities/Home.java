@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) 2019. This code and all it's likeness are property of Kintu Declan Trevor.
+ * d-kintu@outlook.com
+ * Any unauthorised use of this material shall lead to legal prosecution. All rights reserved.
+ */
+
 package com.example.declan.qwiktings.BodyActivities;
 
 import android.content.Intent;
@@ -23,11 +29,14 @@ import com.example.declan.qwiktings.R;
 import com.example.declan.qwiktings.Services.ListenOrder;
 import com.example.declan.qwiktings.StartActivities.Login_Activity;
 import com.example.declan.qwiktings.ViewHolder.MenuViewHolder;
+
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+
 import com.squareup.picasso.Picasso;
 
 public class Home extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -68,6 +77,7 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
         navigationView.setNavigationItemSelectedListener(this);
 
         //get firebase auth instance
+        FirebaseApp.initializeApp(this);
         auth = FirebaseAuth.getInstance();
         user = auth.getCurrentUser();
         if (user != null) {

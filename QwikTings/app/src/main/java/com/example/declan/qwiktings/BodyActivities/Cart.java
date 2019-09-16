@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) 2019. This code and all it's likeness are property of Kintu Declan Trevor.
+ * d-kintu@outlook.com
+ * Any unauthorised use of this material shall lead to legal prosecution. All rights reserved.
+ */
+
 package com.example.declan.qwiktings.BodyActivities;
 
 import android.content.DialogInterface;
@@ -20,21 +26,21 @@ import com.example.declan.qwiktings.Models.Order;
 import com.example.declan.qwiktings.Models.Requests;
 import com.example.declan.qwiktings.R;
 import com.example.declan.qwiktings.ViewHolder.CartAdapter;
+
 import com.google.android.gms.common.api.Status;
 import com.google.android.gms.location.places.Place;
 import com.google.android.gms.location.places.ui.PlaceAutocompleteFragment;
 import com.google.android.gms.location.places.ui.PlaceSelectionListener;
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import java.lang.reflect.Array;
 import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
-import java.util.Random;
 
 import info.hoang8f.widget.FButton;
 
@@ -60,6 +66,7 @@ public class Cart extends AppCompatActivity
         setContentView(R.layout.activity_cart);
 
         //Firebase
+        FirebaseApp.initializeApp(this);
         database = FirebaseDatabase.getInstance();
         reference = database.getReference("Requests");
         auth = FirebaseAuth.getInstance();

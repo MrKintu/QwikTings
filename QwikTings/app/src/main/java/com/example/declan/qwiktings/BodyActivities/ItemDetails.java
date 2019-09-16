@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) 2019. This code and all it's likeness are property of Kintu Declan Trevor.
+ * d-kintu@outlook.com
+ * Any unauthorised use of this material shall lead to legal prosecution. All rights reserved.
+ */
+
 package com.example.declan.qwiktings.BodyActivities;
 
 import android.support.annotation.NonNull;
@@ -11,15 +17,19 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.cepheuen.elegantnumberbutton.view.ElegantNumberButton;
+
 import com.example.declan.qwiktings.Databases.Database;
 import com.example.declan.qwiktings.Models.Order;
 import com.example.declan.qwiktings.Models.QwikShop;
 import com.example.declan.qwiktings.R;
+
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+
 import com.squareup.picasso.Picasso;
 
 public class ItemDetails extends AppCompatActivity {
@@ -41,6 +51,7 @@ public class ItemDetails extends AppCompatActivity {
         setContentView(R.layout.activity_item_details);
 
         //Firebase
+        FirebaseApp.initializeApp(this);
         database = FirebaseDatabase.getInstance();
         items = database.getReference("Items");
 

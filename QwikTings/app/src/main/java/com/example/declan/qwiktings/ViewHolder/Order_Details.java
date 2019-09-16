@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) 2019. This code and all it's likeness are property of Kintu Declan Trevor.
+ * d-kintu@outlook.com
+ * Any unauthorised use of this material shall lead to legal prosecution. All rights reserved.
+ */
+
 package com.example.declan.qwiktings.ViewHolder;
 
 import android.support.v7.app.AppCompatActivity;
@@ -8,6 +14,7 @@ import android.widget.TextView;
 
 import com.example.declan.qwiktings.Models.Common;
 import com.example.declan.qwiktings.R;
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -26,6 +33,8 @@ public class Order_Details extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_order__details);
 
+        //Get Firebase auth instance
+        FirebaseApp.initializeApp(this);
         auth = FirebaseAuth.getInstance();
         user = auth.getCurrentUser();
 

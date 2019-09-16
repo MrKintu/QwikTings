@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) 2019. This code and all it's likeness are property of Kintu Declan Trevor.
+ * d-kintu@outlook.com
+ * Any unauthorised use of this material shall lead to legal prosecution. All rights reserved.
+ */
+
 package com.example.declan.qwiktings.Services;
 
 import android.app.Notification;
@@ -14,6 +20,7 @@ import android.support.v4.app.NotificationCompat;
 import com.example.declan.qwiktings.BodyActivities.OrderStatus;
 import com.example.declan.qwiktings.Models.Requests;
 import com.example.declan.qwiktings.R;
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -31,6 +38,7 @@ public class ListenOrder extends Service implements ChildEventListener
     public void onCreate()
     {
         super.onCreate();
+        FirebaseApp.initializeApp(this);
         database = FirebaseDatabase.getInstance();
         orders = database.getReference("Requests");
     }

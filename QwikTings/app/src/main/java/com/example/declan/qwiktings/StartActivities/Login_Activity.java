@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) 2019. This code and all it's likeness are property of Kintu Declan Trevor.
+ * d-kintu@outlook.com
+ * Any unauthorised use of this material shall lead to legal prosecution. All rights reserved.
+ */
+
 package com.example.declan.qwiktings.StartActivities;
 
 import android.content.Intent;
@@ -12,14 +18,14 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.example.declan.qwiktings.BodyActivities.Home;
-import com.example.declan.qwiktings.Models.User;
 import com.example.declan.qwiktings.R;
+
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DatabaseReference;
+
 
 public class Login_Activity extends AppCompatActivity {
 
@@ -34,7 +40,9 @@ public class Login_Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_login);
+
         //Get Firebase auth instance
+        FirebaseApp.initializeApp(this);
         auth = FirebaseAuth.getInstance();
 
         if (auth.getCurrentUser() != null) {

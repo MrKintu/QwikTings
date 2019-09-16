@@ -1,14 +1,16 @@
+/*
+ * Copyright (c) 2019. This code and all it's likeness are property of Kintu Declan Trevor.
+ * d-kintu@outlook.com
+ * Any unauthorised use of this material shall lead to legal prosecution. All rights reserved.
+ */
+
 package com.example.declan.qwiktings.BodyActivities;
 
-import android.app.DownloadManager;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.TextView;
 
@@ -18,7 +20,9 @@ import com.example.declan.qwiktings.Models.Requests;
 import com.example.declan.qwiktings.R;
 import com.example.declan.qwiktings.ViewHolder.OrderViewHolder;
 import com.example.declan.qwiktings.ViewHolder.Order_Details;
+
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
@@ -41,6 +45,7 @@ public class OrderStatus extends AppCompatActivity
         setContentView(R.layout.activity_order_status);
 
         //Firebase Connection.
+        FirebaseApp.initializeApp(this);
         database = FirebaseDatabase.getInstance();
         reference = database.getReference("Requests");
         auth = FirebaseAuth.getInstance();

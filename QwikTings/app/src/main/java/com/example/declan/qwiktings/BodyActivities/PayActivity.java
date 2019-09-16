@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) 2019. This code and all it's likeness are property of Kintu Declan Trevor.
+ * d-kintu@outlook.com
+ * Any unauthorised use of this material shall lead to legal prosecution. All rights reserved.
+ */
+
 package com.example.declan.qwiktings.BodyActivities;
 
 import android.app.ProgressDialog;
@@ -17,12 +23,14 @@ import android.widget.Toast;
 
 import com.afollestad.materialdialogs.GravityEnum;
 import com.afollestad.materialdialogs.MaterialDialog;
+
 import com.bdhobare.mpesa.Mode;
 import com.bdhobare.mpesa.Mpesa;
 import com.bdhobare.mpesa.interfaces.AuthListener;
 import com.bdhobare.mpesa.interfaces.MpesaListener;
 import com.bdhobare.mpesa.models.STKPush;
 import com.bdhobare.mpesa.utils.Pair;
+
 import com.example.declan.qwiktings.R;
 
 public class PayActivity extends AppCompatActivity implements AuthListener, MpesaListener

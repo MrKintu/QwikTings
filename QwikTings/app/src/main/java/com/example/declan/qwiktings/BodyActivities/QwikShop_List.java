@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) 2019. This code and all it's likeness are property of Kintu Declan Trevor.
+ * d-kintu@outlook.com
+ * Any unauthorised use of this material shall lead to legal prosecution. All rights reserved.
+ */
+
 package com.example.declan.qwiktings.BodyActivities;
 
 import android.content.Intent;
@@ -5,16 +11,18 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.View;
 
 import com.example.declan.qwiktings.Interface.ItemClickListener;
 import com.example.declan.qwiktings.Models.QwikShop;
 import com.example.declan.qwiktings.R;
 import com.example.declan.qwiktings.ViewHolder.QwikShopViewHolder;
+
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+
 import com.squareup.picasso.Picasso;
 
 public class QwikShop_List extends AppCompatActivity
@@ -34,6 +42,7 @@ public class QwikShop_List extends AppCompatActivity
         setContentView(R.layout.qwikshop_list);
 
         //firebase database
+        FirebaseApp.initializeApp(this);
         database = FirebaseDatabase.getInstance();
         items = database.getReference("Items");
 

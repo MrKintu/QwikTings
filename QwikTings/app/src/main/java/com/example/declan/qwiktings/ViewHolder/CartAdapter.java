@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) 2019. This code and all it's likeness are property of Kintu Declan Trevor.
+ * d-kintu@outlook.com
+ * Any unauthorised use of this material shall lead to legal prosecution. All rights reserved.
+ */
+
 package com.example.declan.qwiktings.ViewHolder;
 
 import android.content.Context;
@@ -10,14 +16,12 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.amulyakhare.textdrawable.TextDrawable;
-import com.example.declan.qwiktings.BodyActivities.Cart;
+
 import com.example.declan.qwiktings.Interface.ItemClickListener;
 import com.example.declan.qwiktings.Models.Order;
-import com.example.declan.qwiktings.Models.QwikShop;
 import com.example.declan.qwiktings.R;
 
 import java.text.NumberFormat;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 

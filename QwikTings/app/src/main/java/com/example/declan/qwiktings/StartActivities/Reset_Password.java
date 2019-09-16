@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) 2019. This code and all it's likeness are property of Kintu Declan Trevor.
+ * d-kintu@outlook.com
+ * Any unauthorised use of this material shall lead to legal prosecution. All rights reserved.
+ */
+
 package com.example.declan.qwiktings.StartActivities;
 
 import android.support.annotation.NonNull;
@@ -13,6 +19,7 @@ import android.widget.Toast;
 import com.example.declan.qwiktings.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class Reset_Password extends AppCompatActivity {
@@ -23,8 +30,6 @@ public class Reset_Password extends AppCompatActivity {
     private FirebaseAuth auth;
     private ProgressBar progressBar;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +39,8 @@ public class Reset_Password extends AppCompatActivity {
         btnBack = (Button) findViewById(R.id.btn_back);
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
 
+        //Get Firebase auth instance
+        FirebaseApp.initializeApp(this);
         auth = FirebaseAuth.getInstance();
 
         btnBack.setOnClickListener(new View.OnClickListener() {
