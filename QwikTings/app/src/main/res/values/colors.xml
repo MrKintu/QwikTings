@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2019. This code and all it's likeness are property of Kintu Declan Trevor.
+  ~ d-kintu@outlook.com
+  ~ Any unauthorised use of this material shall lead to legal prosecution. All rights reserved.
+  -->
+
 <resources>
     <color name="colorPrimary">#00bfbf</color>
     <color name="colorPrimaryDark">#555959</color>
