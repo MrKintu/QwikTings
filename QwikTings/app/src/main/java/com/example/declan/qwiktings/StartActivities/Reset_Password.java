@@ -6,8 +6,6 @@
 
 package com.example.declan.qwiktings.StartActivities;
 
-import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -15,6 +13,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.declan.qwiktings.R;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -34,10 +35,10 @@ public class Reset_Password extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reset_password);
-        inputEmail = (EditText) findViewById(R.id.email);
-        btnReset = (Button) findViewById(R.id.btn_reset_password);
-        btnBack = (Button) findViewById(R.id.btn_back);
-        progressBar = (ProgressBar) findViewById(R.id.progressBar);
+        inputEmail = findViewById(R.id.email);
+        btnReset = findViewById(R.id.btn_reset_password);
+        btnBack = findViewById(R.id.btn_back);
+        progressBar = findViewById(R.id.progressBar);
 
         //Get Firebase auth instance
         FirebaseApp.initializeApp(this);
