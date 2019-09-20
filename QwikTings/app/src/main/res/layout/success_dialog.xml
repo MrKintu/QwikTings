@@ -6,7 +6,8 @@
   ~ Any unauthorised use of this material shall lead to legal prosecution. All rights reserved.
   -->
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="10dp"
@@ -22,7 +23,7 @@
         app:srcCompat="@drawable/ic_check_black_24dp"
         android:layout_gravity="center_horizontal"/>
 
-    <android.support.v7.widget.AppCompatTextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:layout_width="wrap_content"
         android:textSize="16sp"
         android:id="@+id/message"
@@ -31,4 +32,4 @@
         android:text="Thank You"
         android:layout_height="wrap_content" />
 
-</LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

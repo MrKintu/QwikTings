@@ -6,7 +6,8 @@
   ~ Any unauthorised use of this material shall lead to legal prosecution. All rights reserved.
   -->
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="@dimen/nav_header_height"
     android:background="@color/overlayBackground"
@@ -26,4 +27,4 @@
         android:text="@string/nav_header_title"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
-</LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -27,7 +27,6 @@ import com.example.declan.qwiktings.Models.Order;
 import com.example.declan.qwiktings.Models.Requests;
 import com.example.declan.qwiktings.R;
 import com.example.declan.qwiktings.ViewHolder.CartAdapter;
-
 import com.google.android.gms.common.api.Status;
 import com.google.android.gms.location.places.Place;
 import com.google.android.gms.location.places.ui.PlaceAutocompleteFragment;
@@ -142,7 +141,7 @@ public class Cart extends AppCompatActivity
                 new Database(getBaseContext()).clearCart(order);
 
                 //Remove Fragment
-                getFragmentManager().beginTransaction().remove(getFragmentManager().findFragmentById(R.id.autocomplete_fragment))
+                getSupportFragmentManager().beginTransaction().remove(getSupportFragmentManager().findFragmentById(R.id.autocomplete_fragment))
                         .commit();
 
                 //Launch Pay Activity
@@ -161,7 +160,7 @@ public class Cart extends AppCompatActivity
             public void onClick(DialogInterface dialog, int which)
             {
                 //Remove Fragment
-                getFragmentManager().beginTransaction().remove(getFragmentManager().findFragmentById(R.id.autocomplete_fragment))
+                getSupportFragmentManager().beginTransaction().remove(getSupportFragmentManager().findFragmentById(R.id.autocomplete_fragment))
                         .commit();
 
                 dialog.dismiss();
