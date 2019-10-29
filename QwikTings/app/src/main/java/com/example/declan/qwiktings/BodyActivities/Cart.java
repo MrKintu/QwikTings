@@ -19,6 +19,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -101,7 +102,7 @@ public class Cart extends AppCompatActivity
         LayoutInflater inflater = this.getLayoutInflater();
         View cart_address = inflater.inflate(R.layout.cart_address_google_places, null);
 
-        final PlaceAutocompleteFragment address = (PlaceAutocompleteFragment) getFragmentManager().findFragmentById(R.id.autocomplete_fragment);
+        final PlaceAutocompleteFragment address = FragmentActivity.getSupportFragmentManager().findFragmentById(R.id.autocomplete_fragment);
         address.getView().findViewById(R.id.place_autocomplete_search_button).setVisibility(View.GONE);
         ((EditText) address.getView().findViewById(R.id.place_autocomplete_search_input))
                 .setHint("Enter Your Address");
@@ -141,8 +142,8 @@ public class Cart extends AppCompatActivity
                 new Database(getBaseContext()).clearCart(order);
 
                 //Remove Fragment
-                getSupportFragmentManager().beginTransaction().remove(getSupportFragmentManager().findFragmentById(R.id.autocomplete_fragment))
-                        .commit();
+                getSupportFragmentManager().beginTransaction().remove(getSupportFragmentManager()
+                        .findFragmentById(R.id.autocomplete_fragment)).commit();
 
                 //Launch Pay Activity
                 Intent pay = new Intent(getApplicationContext(), PayActivity.class);
